@@ -4,6 +4,7 @@
 const CustomMarker = require('editor-js-custom-marker');
 const Quote = require('@editorjs/quote');
 const Paragraph = require('editorjs-paragraph-with-alignment');
+const Header = require('@editorjs/header');
 
 
 const Configuration = (datas) => {
@@ -34,19 +35,25 @@ const Configuration = (datas) => {
           quotePlaceholder: 'Comentario',
           captionPlaceholder: 'Comentario',
         },
+        paragraph: {
+          class: Paragraph,
+          inlineToolbar: true,
+        },
+        header: {
+          class: Header,
+          config: {
+            placeholder: 'Enter a header',
+            levels: [2, 3, 4],
+            defaultLevel: 3
+          }
+        }
+        
+        // Marker: {
+        //   class: Marker,
+        //   shortcut: 'CMD+SHIFT+M',
+        // }
       },
-      paragraph: {
-        class: Paragraph,
-        inlineToolbar: true,
-      },
-      
-      
-      // Marker: {
-      //   class: Marker,
-      //   shortcut: 'CMD+SHIFT+M',
-      // }
     },
-
     data: datas
   });
 
