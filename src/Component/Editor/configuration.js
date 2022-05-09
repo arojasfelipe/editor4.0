@@ -1,5 +1,3 @@
-// import axios from 'axios';
-// import React, { useState, useEffect } from 'react';
 // import SimpleImage from './simple-image';
 // const Marker = require('@editorjs/marker');
 
@@ -8,23 +6,7 @@ const Quote = require('@editorjs/quote');
 const Paragraph = require('editorjs-paragraph-with-alignment');
 
 
-const Configuration = () => {
-
-  // const [editor, seteditor] = useState({});
-
-  // const textFields = async () => {
-  //   await axios.get("")
-  //   .then(response => {
-  //     console.log(response.data)
-  //   }).catch(error => {
-  //     console.log(error)
-  //   })
-  // }
-  
-  // useEffect(() => {
-  //   textFields()
-  // }, [])
-
+const Configuration = (datas) => {
   return ({
       /**
        * Id of Element that should contain Editor instance
@@ -77,25 +59,7 @@ const Configuration = () => {
     data:
         {
             "time": 1643195431504,
-            "blocks": [
-                {
-                    "id": "o72AO0sY-1",
-                    "type": "paragraph",
-                    "data": {
-                        "text": "Ingrese su texto"
-                    }
-                },
-                // {
-                //     type: "image",
-                //     data: {
-                //       url: "https://cdn.pixabay.com/photo/2017/09/01/21/53/blue-2705642_1280.jpg",
-                //       caption: 'Here is a caption field',
-                //       withBorder: false,
-                //       withBackground: true,
-                //       stretched: false
-                //     }
-                //   }
-            ],
+            "blocks": datas,
             "version": "2.22.2"
         }
   });

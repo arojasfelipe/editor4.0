@@ -1,15 +1,26 @@
 import React, { useState, useEffect } from 'react';
+import axios from 'axios';
 import EditorJS from '@editorjs/editorjs';
 import Configuration from './configuration';
 import './styles/containerEditor.css';
 
-const Editor = (props) => {
+const Editor = () => {
 
     const [editor, seteditor] = useState({});
 
-    useEffect(() => {
-        const editor = new EditorJS(Configuration());
+
+    const textFields = async () => {
+      await axios.get("http://localhost:4000/blocks")
+      .then(response => {
+        const editor = new EditorJS(Configuration(response.data));
         seteditor(editor);
+      }).catch(error => {
+        console.log(error)
+      })
+    }
+
+    useEffect(() => {
+        textFields()
     }, []);
 
 
