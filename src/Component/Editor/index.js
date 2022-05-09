@@ -37,6 +37,18 @@ const Editor = () => {
         <div style={{margin:"20px"}}>
             <h1>Document</h1>
             <div id="editorjs" className='container-editor'/>
+
+            {/* Text area */}
+            <div>
+                <textarea id="w3review" 
+                            name="w3review" 
+                            rows="4" 
+                            cols="50"
+                            placeholder="Agregue comentarios."
+                            style={{marginTop: "30px"}}
+                >
+                </textarea>
+            </div>
             <button onClick={onSave}>Save</button>
         </div>
     );
