@@ -1,18 +1,87 @@
 {
-  "blocks": {
-    "time": 1652112633831,
-    "blocks": [
-  
-      {
-        "id": "zQzkm4eRdu",
-        "type": "paragraph",
-        "data": {
-          "text": "Hey. Meet the new Editor. On this page you can see it in action — try to edit this text.",
-          "caption": []
-        }
+  "blocks": [
+    {
+      "id" : "5EZcJPxkps",
+      "type" : "header",
+      "data" : {
+          "text" : "Editor.js",
+          "level" : 2
       }
-    ],
-  
-    "version": "2.24.3"
-  }
+    },
+    {
+      "id" : "AlU6yduzUX",
+      "type" : "paragraph",
+      "data" : {
+          "text" : "Hey. Meet the new Editor. On this page you can see it in action — try to edit this text."
+      }
+    },
+    {
+      "id" : "qPO7Sj2pOm",
+      "type" : "header",
+      "data" : {
+          "text" : "Key features",
+          "level" : 3
+      }
+    },
+    {
+      "id" : "SNeKzzGFID",
+      "type" : "list",
+      "data" : {
+          "style" : "unordered",
+          "items" : [
+              "It is a block-styled editor",
+              "It returns clean data output in JSON",
+              "Designed to be extendable and pluggable with a simple API"
+          ]
+      }
+    },
+    {
+      "id" : "HVWaF-ZVAE",
+      "type" : "paragraph",
+      "data" : {
+          "text" : "There are dozens of <a href=\"https://github.com/editor-js\">ready-to-use Blocks</a> and the <a href=\"https://editorjs.io/creating-a-block-tool\">simple API</a> for creation any Block you need. For example, you can implement Blocks for Tweets, Instagram posts, surveys and polls, CTA-buttons and even games."
+      }
+    },
+    {
+      "id" : "rb-kSpe5Za",
+      "type" : "header",
+      "data" : {
+          "text" : "What does it mean clean data output",
+          "level" : 3
+      }
+    },
+    {
+      "id" : "hH6EbJBZYf",
+      "type" : "paragraph",
+      "data" : {
+          "text" : "Classic WYSIWYG-editors produce raw HTML-markup with both content data and content appearance. On the contrary, Editor.js outputs JSON object with data of each Block. You can see an example below"
+      }
+    },
+    {
+      "id" : "TjszqEQQGr",
+      "type" : "paragraph",
+      "data" : {
+          "text" : "Given data can be used as you want: render with HTML for <code class=\"inline-code\">Web clients</code>, render natively for <code class=\"inline-code\">mobile apps</code>, create markup for <code class=\"inline-code\">Facebook Instant Articles</code> or <code class=\"inline-code\">Google AMP</code>, generate an <code class=\"inline-code\">audio version</code> and so on."
+      }
+    },
+    {
+      "id" : "JbGdTuDNQo",
+      "type" : "paragraph",
+      "data" : {
+          "text" : "Clean data is useful to sanitize, validate and process on the backend."
+      }
+    },
+    {
+      "id" : "wARHrIOING",
+      "type" : "delimiter",
+      "data" : {}
+    },
+    {
+        "id" : "jFM_LTzWQu",
+        "type" : "paragraph",
+        "data" : {
+            "text" : "We have been working on this project more than three years. Several large media projects help us to test and debug the Editor, to make it's core more stable. At the same time we significantly improved the API. Now, it can be used to create any plugin for any task. Hope you enjoy. 😏"
+        }
+    }
+  ]
 }
